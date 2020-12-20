@@ -8,7 +8,7 @@ PROGS=isort #add txtfind
 all: $(PROGS)
 
 isort: sortingMain.o sorting.o
-	$(CC) $(CFLAGS) sortingMain.o sorting.o -o sortingMain
+	$(CC) $(CFLAGS) sortingMain.o sorting.o -o isort
 
 sortingMain.o: sorting.h sortingMain.c
 	$(CC) $(CFLAGS) -c sortingMain.c
